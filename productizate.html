@@ -3,97 +3,106 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Productízate | Soluciones Artificiales</title>
-<meta name="description" content="Tu conocimiento vale. El problema es que solo existe dentro de tu cabeza. Te instalamos tu propio cerebro en una IA: productiza tu conocimiento.">
+<title>Productízate | Tu negocio trabajando sin ti encima</title>
+<meta name="description" content="Te instalamos a ti en una inteligencia artificial. Todo lo que sabes queda trabajando en un sistema tuyo: responde, escribe y vende como tú.">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:#fffaf2; color:#202329; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height:1.45; }
-  .wrap { max-width:880px; margin:0 auto; padding:32px 20px 48px; }
-  .tag { font-family:"Courier New", monospace; letter-spacing:2px; font-size:14px; font-weight:bold; color:#bc442c; }
-  h1 { font-size:46px; line-height:1.08; margin:12px 0 14px; }
-  h2 { font-size:30px; line-height:1.15; margin:0 0 10px; }
-  p { font-size:19px; color:#505966; }
-  p strong, li strong { color:#202329; }
-  .win { background:#ffffff; border:3px solid #202329; box-shadow:7px 7px 0 #202329; margin:26px 0; }
-  .bar { background:#234ddb; color:#ffffff; font-family:"Courier New", monospace; font-weight:bold; font-size:15px; letter-spacing:1px; padding:9px 16px; }
-  .body { padding:20px 22px 22px; }
-  .tres { display:flex; gap:14px; flex-wrap:wrap; margin-top:6px; }
-  .tres div { flex:1; min-width:220px; border:2px solid #202329; padding:16px; background:#fffaf2; }
-  .tres .mid { background:#ffe3d9; }
-  .tres .fin { background:#dce5ff; }
-  .tres h3 { font-size:21px; margin-bottom:6px; }
-  .tres p { font-size:17px; }
-  .quote { font-size:23px; font-weight:800; color:#202329; line-height:1.3; }
-  .who { font-size:15px; color:#505966; margin-top:8px; }
-  ol, ul { margin:8px 0 0 22px; }
-  li { font-size:19px; color:#505966; margin-bottom:8px; }
-  .cta { display:block; text-align:center; background:#234ddb; color:#ffffff; font-size:22px; font-weight:800; text-decoration:none; border:3px solid #202329; box-shadow:7px 7px 0 #202329; padding:18px 20px; margin:30px 0 10px; }
-  .fine { font-size:15px; text-align:center; }
-  @media (max-width:480px){ h1{font-size:36px;} .quote{font-size:20px;} }
+  :root { --bg:#101014; --panel:#1a1a21; --line:#2b2b35; --txt:#f5f2ea; --dim:#a9a49a; --sol:#ffd23f; --sol2:#ff9f1c; }
+  body { background:var(--bg); color:var(--txt); font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height:1.5; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 20px 64px; }
+  .marca { display:flex; align-items:center; gap:10px; font-weight:800; font-size:19px; letter-spacing:.2px; }
+  .marca .dot { width:14px; height:14px; border-radius:50%; background:var(--sol); box-shadow:0 0 18px var(--sol); }
+  .marca small { color:var(--dim); font-weight:600; font-size:13px; display:block; letter-spacing:.4px; }
+  h1 { font-size:52px; line-height:1.04; letter-spacing:-1px; margin:44px 0 16px; }
+  h1 .hl { color:var(--sol); }
+  .sub { font-size:21px; color:var(--dim); max-width:34ch; }
+  .btn { display:block; text-align:center; background:var(--sol); color:#17130a; font-size:20px; font-weight:800; text-decoration:none; border-radius:16px; padding:17px 20px; margin-top:26px; }
+  .btn:active { background:var(--sol2); }
+  .chat { background:var(--panel); border:1px solid var(--line); border-radius:24px; padding:20px; margin:36px 0 8px; }
+  .chat .cap { font-size:13px; color:var(--dim); letter-spacing:1.2px; font-weight:700; margin-bottom:14px; }
+  .msg { max-width:85%; padding:12px 16px; border-radius:18px; font-size:17px; margin-bottom:10px; }
+  .msg.tu { background:#26262f; border-bottom-left-radius:6px; }
+  .msg.yo { background:var(--sol); color:#17130a; margin-left:auto; border-bottom-right-radius:6px; font-weight:600; }
+  .msg small { display:block; font-size:12px; opacity:.65; margin-bottom:3px; font-weight:700; letter-spacing:.4px; }
+  section { margin-top:56px; }
+  h2 { font-size:34px; letter-spacing:-.5px; line-height:1.15; margin-bottom:14px; }
+  .pain { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:18px 20px; font-size:20px; margin-bottom:12px; }
+  .tres { display:grid; gap:12px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:20px; }
+  .card .n { width:34px; height:34px; border-radius:50%; background:var(--sol); color:#17130a; font-weight:900; display:flex; align-items:center; justify-content:center; font-size:17px; margin-bottom:10px; }
+  .card h3 { font-size:22px; margin-bottom:5px; }
+  .card p { color:var(--dim); font-size:17px; }
+  .frase { font-size:26px; font-weight:800; line-height:1.3; }
+  .quien { color:var(--dim); font-size:15px; margin-top:6px; }
+  .final { text-align:center; margin-top:64px; }
+  .final h2 { font-size:38px; }
+  .pie { color:var(--dim); font-size:14px; text-align:center; margin-top:26px; }
+  @media (max-width:480px){ h1{font-size:40px;} h2{font-size:29px;} .frase{font-size:22px;} }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="tag">SOLUCIONES ARTIFICIALES</div>
-  <h1>Tú eres el producto. El problema: solo existes en tu cabeza.</h1>
-  <p>Tu conocimiento vale. Tus clientes lo saben. Pero si tú no estás, nada se mueve: <strong>escribes todo tú, decides todo tú, vendes tú</strong>. Productizarte es sacar eso de tu cabeza e instalarlo en un sistema que trabaja como tú, sin ti encima.</p>
 
-  <div class="win">
-    <div class="bar">EL DOLOR, EN PALABRAS REALES</div>
-    <div class="body">
-      <p class="quote">"Yo escribo todo, yo escribo todo."</p>
-      <p class="who">Psicóloga con práctica privada online. Vende por referidos y sus cursos dependen de su tiempo.</p>
-      <p style="margin-top:12px;" class="quote">"Necesito pasar del creo al me consta."</p>
-      <p class="who">Dueño de una empresa de software con 120 empleados. Todas las decisiones pasan por él.</p>
-    </div>
+  <div class="marca"><span class="dot"></span><span>PRODUCTÍZATE<small>DE SOLUCIONES ARTIFICIALES</small></span></div>
+
+  <h1>Te instalamos a <span class="hl">ti</span> en una inteligencia artificial.</h1>
+  <p class="sub">Todo lo que sabes, cómo hablas y cómo decides, queda trabajando en un sistema tuyo. Tu negocio sigue aunque tú no estés.</p>
+
+  <div class="chat">
+    <div class="cap">ASÍ SE VE POR DENTRO</div>
+    <div class="msg yo"><small>TÚ LE PREGUNTAS</small>¿Quién me escribió hoy y qué es lo urgente?</div>
+    <div class="msg tu"><small>TU OTRO TÚ RESPONDE</small>Te escribieron 3 clientes. Lo urgente es el presupuesto que te pidieron para hoy. Ya lo dejé borrador en tu voz, listo para enviar.</div>
+    <div class="msg yo"><small>TÚ LE PREGUNTAS</small>Respóndele a la clienta nueva como lo haría yo.</div>
+    <div class="msg tu"><small>TU OTRO TÚ RESPONDE</small>Listo. Le respondí con tu forma de hablar y le ofrecí agendar, como haces siempre.</div>
   </div>
 
-  <div class="win">
-    <div class="bar">TRES CAMINOS, UNO SOLO TE LIBERA</div>
-    <div class="body">
-      <div class="tres">
-        <div>
-          <h3>El curso</h3>
-          <p>Te enseña a hacerlo tú. Cien horas encima de operar tu negocio. Casi nadie lo termina, y tu conocimiento sigue atrapado en ti.</p>
-        </div>
-        <div class="mid">
-          <h3>La agencia</h3>
-          <p>Lo hace por ti y se queda con el conocimiento. Tú pagas todos los meses y dependes de ellos para todo.</p>
-        </div>
-        <div class="fin">
-          <h3>La instalación</h3>
-          <p>Te productizamos a ti. Tu cerebro queda montado en una inteligencia artificial tuya, privada, que piensa con tu criterio y ejecuta con agentes. El activo es tuyo.</p>
-        </div>
-      </div>
+  <a class="btn" href="#agenda">Quiero el mío</a>
+
+  <section>
+    <h2>¿Te pasa esto?</h2>
+    <div class="pain">Si tú no estás, nada se mueve.</div>
+    <div class="pain">Escribes todo tú. Respondes todo tú. Vendes tú.</div>
+    <div class="pain">Tu equipo no tiene tu criterio, y no te puedes clonar.</div>
+    <p style="color:var(--dim); font-size:18px; margin-top:6px;">Hasta hoy. Porque esto es, literalmente, clonarte trabajando.</p>
+  </section>
+
+  <section>
+    <h2>Qué es, en una frase</h2>
+    <p class="frase">Un sistema que piensa con lo que tú sabes y trabaja con tus reglas, para que tu negocio no dependa de que tú estés encima.</p>
+    <div class="tres" style="margin-top:18px;">
+      <div class="card"><h3>Responde como tú</h3><p>A tus clientes, con tus palabras y tu criterio. No con respuestas de robot.</p></div>
+      <div class="card"><h3>Escribe como tú</h3><p>Contenido, mensajes y propuestas en tu voz, sin que tengas que escribirlos.</p></div>
+      <div class="card"><h3>Te reta como un socio</h3><p>Conoce tu negocio entero y te discute las decisiones con tu propia información.</p></div>
     </div>
+  </section>
+
+  <section>
+    <h2>Cómo empieza</h2>
+    <div class="tres">
+      <div class="card"><div class="n">1</div><h3>Conversamos</h3><p>En una sesión, todo lo que sabes entra al sistema: tu historia, tus reglas, tu forma de vender.</p></div>
+      <div class="card"><div class="n">2</div><h3>Lo armamos por ti</h3><p>Tú no aprendes nada técnico. Nosotros construimos tu sistema y te lo dejamos funcionando.</p></div>
+      <div class="card"><div class="n">3</div><h3>Empieza a trabajar</h3><p>Tu otro tú responde, escribe y te ayuda a decidir desde el primer día.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ya está pasando</h2>
+    <div class="card" style="margin-bottom:12px;">
+      <p class="frase">"Me gusta el concepto. Yo creo que pago por verlo."</p>
+      <p class="quien">Dueño de una empresa con 120 empleados. Pagó y su sistema arranca esta semana.</p>
+    </div>
+    <div class="card">
+      <p class="frase">"Yo escribo todo, yo escribo todo."</p>
+      <p class="quien">Eso dijo una clienta antes de productizarse. Hoy ya no escribe todo ella.</p>
+    </div>
+  </section>
+
+  <div class="final" id="agenda">
+    <h2>Tu negocio, trabajando sin ti encima.</h2>
+    <a class="btn" href="#agenda">Agenda tu llamada con Diego</a>
+    <p class="pie">Productízate es un producto de Soluciones Artificiales.</p>
   </div>
 
-  <div class="win">
-    <div class="bar">QUÉ RECIBES</div>
-    <div class="body">
-      <ol>
-        <li><strong>Tu cerebro, instalado.</strong> Tu historia, tus decisiones, tus reglas y tu forma de hablar, en un repositorio privado que es tuyo.</li>
-        <li><strong>Una contraparte, no un espejo.</strong> Un segundo asiento que te reta con tu propia data, como Diego se lo dijo a un cliente: no tienes un par equitativo que te rete; ahora sí.</li>
-        <li><strong>Manos que ejecutan.</strong> Agentes que escriben, responden, agendan y venden en tu voz, para que operes sin estar encima de todo.</li>
-      </ol>
-      <p style="margin-top:12px;" class="quote">"Se llama productizar tu conocimiento."</p>
-      <p class="who">Diego Vetencourt, octubre de 2026.</p>
-    </div>
-  </div>
-
-  <div class="win">
-    <div class="bar">ESTO YA ESTÁ PASANDO</div>
-    <div class="body">
-      <p class="quote">"Me gusta el concepto. Yo creo que pago por verlo."</p>
-      <p class="who">El dueño de la empresa de software. Pagó su instalación y el arranque es esta semana.</p>
-      <p style="margin-top:12px;" class="quote">"Yo sé que ni siquiera lo hemos terminado de montar, pero es que te tengo que contar, porque es increíble además la sincronía."</p>
-      <p class="who">Clienta con su instalación en curso, octubre de 2026.</p>
-    </div>
-  </div>
-
-  <a class="cta" href="#agenda">Agenda tu llamada con Diego</a>
-  <p class="fine">Sesiones cortas y con agenda. El resto lo hace el sistema.</p>
-  <div id="agenda"></div>
 </div>
 </body>
 </html>
