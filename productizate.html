@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Productízate | Tu negocio trabajando sin ti encima</title>
-<meta name="description" content="Te instalamos a ti en una inteligencia artificial. Todo lo que sabes queda trabajando en un sistema tuyo: responde, escribe y vende como tú.">
+<meta name="description" content="Te instalamos a ti en una inteligencia artificial. Todo lo que sabes queda trabajando solo, con horario propio, aunque tú no estés.">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   :root { --bg:#101014; --panel:#1a1a21; --line:#2b2b35; --txt:#f5f2ea; --dim:#a9a49a; --sol:#ffd23f; --sol2:#ff9f1c; }
@@ -15,17 +15,14 @@
   .marca small { color:var(--dim); font-weight:600; font-size:13px; display:block; letter-spacing:.4px; }
   h1 { font-size:52px; line-height:1.04; letter-spacing:-1px; margin:44px 0 16px; }
   h1 .hl { color:var(--sol); }
-  .sub { font-size:21px; color:var(--dim); max-width:34ch; }
+  .sub { font-size:21px; color:var(--dim); max-width:36ch; }
   .btn { display:block; text-align:center; background:var(--sol); color:#17130a; font-size:20px; font-weight:800; text-decoration:none; border-radius:16px; padding:17px 20px; margin-top:26px; }
   .btn:active { background:var(--sol2); }
-  .chat { background:var(--panel); border:1px solid var(--line); border-radius:24px; padding:20px; margin:36px 0 8px; }
-  .chat .cap { font-size:13px; color:var(--dim); letter-spacing:1.2px; font-weight:700; margin-bottom:14px; }
-  .msg { max-width:85%; padding:12px 16px; border-radius:18px; font-size:17px; margin-bottom:10px; }
-  .msg.tu { background:#26262f; border-bottom-left-radius:6px; }
-  .msg.yo { background:var(--sol); color:#17130a; margin-left:auto; border-bottom-right-radius:6px; font-weight:600; }
-  .msg small { display:block; font-size:12px; opacity:.65; margin-bottom:3px; font-weight:700; letter-spacing:.4px; }
+  .video { margin:36px 0 8px; border-radius:24px; overflow:hidden; border:1px solid var(--line); background:var(--panel); }
+  .video video { display:block; width:100%; height:auto; }
   section { margin-top:56px; }
   h2 { font-size:34px; letter-spacing:-.5px; line-height:1.15; margin-bottom:14px; }
+  .intro { color:var(--dim); font-size:19px; margin-bottom:16px; }
   .pain { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:18px 20px; font-size:20px; margin-bottom:12px; }
   .tres { display:grid; gap:12px; }
   .card { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:20px; }
@@ -34,10 +31,12 @@
   .card p { color:var(--dim); font-size:17px; }
   .frase { font-size:26px; font-weight:800; line-height:1.3; }
   .quien { color:var(--dim); font-size:15px; margin-top:6px; }
+  .diego { border-left:4px solid var(--sol); padding:4px 0 4px 18px; margin-top:20px; }
+  .diego .frase { font-size:24px; }
   .final { text-align:center; margin-top:64px; }
   .final h2 { font-size:38px; }
   .pie { color:var(--dim); font-size:14px; text-align:center; margin-top:26px; }
-  @media (max-width:480px){ h1{font-size:40px;} h2{font-size:29px;} .frase{font-size:22px;} }
+  @media (max-width:480px){ h1{font-size:40px;} h2{font-size:29px;} .frase{font-size:22px;} .diego .frase{font-size:21px;} }
 </style>
 </head>
 <body>
@@ -46,51 +45,61 @@
   <div class="marca"><span class="dot"></span><span>PRODUCTÍZATE<small>DE SOLUCIONES ARTIFICIALES</small></span></div>
 
   <h1>Te instalamos a <span class="hl">ti</span> en una inteligencia artificial.</h1>
-  <p class="sub">Todo lo que sabes, cómo hablas y cómo decides, queda trabajando en un sistema tuyo. Tu negocio sigue aunque tú no estés.</p>
+  <p class="sub">Todo lo que sabes queda trabajando solo, con horario propio. Aunque tú no estés.</p>
 
-  <div class="chat">
-    <div class="cap">ASÍ SE VE POR DENTRO</div>
-    <div class="msg yo"><small>TÚ LE PREGUNTAS</small>¿Quién me escribió hoy y qué es lo urgente?</div>
-    <div class="msg tu"><small>TU OTRO TÚ RESPONDE</small>Te escribieron 3 clientes. Lo urgente es el presupuesto que te pidieron para hoy. Ya lo dejé borrador en tu voz, listo para enviar.</div>
-    <div class="msg yo"><small>TÚ LE PREGUNTAS</small>Respóndele a la clienta nueva como lo haría yo.</div>
-    <div class="msg tu"><small>TU OTRO TÚ RESPONDE</small>Listo. Le respondí con tu forma de hablar y le ofrecí agendar, como haces siempre.</div>
-  </div>
+  <div class="video"><video src="un-solo-tu.mp4" poster="poster.png" autoplay muted loop playsinline></video></div>
 
-  <a class="btn" href="#agenda">Quiero el mío</a>
+  <a class="btn" href="#agenda">Agenda tu llamada</a>
 
   <section>
     <h2>¿Te pasa esto?</h2>
     <div class="pain">Si tú no estás, nada se mueve.</div>
     <div class="pain">Escribes todo tú. Respondes todo tú. Vendes tú.</div>
-    <div class="pain">Tu equipo no tiene tu criterio, y no te puedes clonar.</div>
-    <p style="color:var(--dim); font-size:18px; margin-top:6px;">Hasta hoy. Porque esto es, literalmente, clonarte trabajando.</p>
+    <div class="pain">Tu equipo no piensa como tú. Y no tienes a nadie que te rete.</div>
   </section>
 
   <section>
-    <h2>Qué es, en una frase</h2>
-    <p class="frase">Un sistema que piensa con lo que tú sabes, trabaja con tus reglas y hace el trabajo solo, sin esperar a que se lo pidas.</p>
-    <div class="tres" style="margin-top:18px;">
-      <div class="card"><h3>Responde como tú</h3><p>A tus clientes, con tus palabras y tu criterio. No con respuestas de robot.</p></div>
-      <div class="card"><h3>Escribe como tú</h3><p>Contenido, mensajes y propuestas en tu voz, sin que tengas que escribirlos.</p></div>
-      <div class="card"><h3>Te reta como un socio</h3><p>Conoce tu negocio entero y te discute las decisiones con tu propia información.</p></div>
+    <h2>Un solo tú que nunca se detiene</h2>
+    <p class="intro">No son mil versiones de ti. Es uno solo: tú, trabajando a su hora, sin que se lo pidas. Incluso el trabajo que no sabes hacer.</p>
+    <div class="pain">Tu Instagram: responde, da seguimiento y consigue citas solo.</div>
+    <div class="pain">Tu contenido: programado solo, semana tras semana.</div>
+    <div class="pain">Tus tareas: dirigidas y revisadas sin que estés encima.</div>
+    <div class="pain">Tu gente: atendida como la atenderías tú, a cualquier hora.</div>
+  </section>
+
+  <section>
+    <h2>Todo lo que sabes, fuera de tu cabeza</h2>
+    <p class="intro">Hoy tu negocio entero vive en tu memoria. Si te pasa algo a ti, se apaga todo. Esto lo saca de ahí:</p>
+    <div class="tres">
+      <div class="card"><h3>Piensa como tú</h3><p>Tus decisiones, tus reglas, tu forma de vender. Instaladas. Le preguntas lo que sea y te responde como tú.</p></div>
+      <div class="card"><h3>Habla como tú</h3><p>Escribe y responde en tu voz, con tus palabras. Nada suena a robot.</p></div>
+      <div class="card"><h3>Te reta como un socio</h3><p>No es un espejo que te repite. Conoce tus números y te discute las decisiones antes de que las tomes.</p></div>
+    </div>
+    <div class="diego">
+      <p class="frase">"Se llama productizar tu conocimiento."</p>
+      <p class="quien">Diego Vetencourt, explicándolo en una llamada real.</p>
     </div>
   </section>
 
   <section>
-    <h2>Miles de versiones de ti, trabajando</h2>
-    <p style="color:var(--dim); font-size:19px; margin-bottom:16px;">El cerebro es solo una parte. Lo que lo cambia todo es que trabaja con horario propio: no espera a que le preguntes, ejecuta solo, incluso el trabajo que tú no sabes hacer.</p>
-    <div class="pain">Pone a andar tu Instagram: responde, da seguimiento y consigue citas.</div>
-    <div class="pain">Programa tu contenido solo, semana tras semana.</div>
-    <div class="pain">Dirige tareas y revisa que todo quede bien hecho.</div>
-    <div class="pain">Atiende a tu gente como lo harías tú, a cualquier hora.</div>
+    <h2>No es un curso. No es una agencia.</h2>
+    <p class="intro">El curso te pide aprenderlo todo encima de manejar tu negocio. La agencia lo hace por ti y se queda con lo que sabe. Esto es otra cosa:</p>
+    <div class="diego">
+      <p class="frase">"Yo estoy cansado de ser una agencia. Yo no soy una agencia."</p>
+      <p class="quien">Diego Vetencourt. Cerró su agencia y su academia antes de construir esto.</p>
+    </div>
+    <div class="diego">
+      <p class="frase">"No contratar una agencia, sino agencia propia de poder hacerlo todo tú."</p>
+      <p class="quien">Su forma de decirlo: el conocimiento se queda contigo, trabajando para ti.</p>
+    </div>
   </section>
 
   <section>
     <h2>Cómo empieza</h2>
     <div class="tres">
-      <div class="card"><div class="n">1</div><h3>Conversamos</h3><p>En una sesión, todo lo que sabes entra al sistema: tu historia, tus reglas, tu forma de vender.</p></div>
-      <div class="card"><div class="n">2</div><h3>Lo armamos por ti</h3><p>Tú no aprendes nada técnico. Nosotros construimos tu sistema y te lo dejamos funcionando.</p></div>
-      <div class="card"><div class="n">3</div><h3>Empieza a trabajar</h3><p>Tu otro tú responde, escribe y te ayuda a decidir desde el primer día.</p></div>
+      <div class="card"><div class="n">1</div><h3>Conversamos</h3><p>Una sesión con Diego. Tu historia, tus reglas y tu forma de vender entran al sistema.</p></div>
+      <div class="card"><div class="n">2</div><h3>Lo armamos por ti</h3><p>Tú no aprendes nada técnico. Te lo dejamos funcionando.</p></div>
+      <div class="card"><div class="n">3</div><h3>Trabaja solo</h3><p>Desde el primer día responde, escribe, vende y te reta. La meta: pasar del creo al me consta.</p></div>
     </div>
   </section>
 
@@ -98,17 +107,17 @@
     <h2>Ya está pasando</h2>
     <div class="card" style="margin-bottom:12px;">
       <p class="frase">"Me gusta el concepto. Yo creo que pago por verlo."</p>
-      <p class="quien">Dueño de una empresa con 120 empleados. Pagó y su sistema arranca esta semana.</p>
+      <p class="quien">Dueño de una empresa con 120 empleados. Pagó. Su instalación arranca esta semana.</p>
     </div>
     <div class="card">
-      <p class="frase">"Yo escribo todo, yo escribo todo."</p>
-      <p class="quien">Eso dijo una clienta antes de productizarse. Hoy ya no escribe todo ella.</p>
+      <p class="frase">"Diego, yo no te puedo explicar de verdad lo que ha sido esto."</p>
+      <p class="quien">Clienta con su instalación en marcha.</p>
     </div>
   </section>
 
   <div class="final" id="agenda">
     <h2>Tu negocio, trabajando sin ti encima.</h2>
-    <a class="btn" href="#agenda">Agenda tu llamada con Diego</a>
+    <a class="btn" href="#agenda">Agenda tu llamada</a>
     <p class="pie">Productízate es un producto de Soluciones Artificiales.</p>
   </div>
 
